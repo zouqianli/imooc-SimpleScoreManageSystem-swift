@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9996C4921E95C9ED00449E1A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996C4911E95C9ED00449E1A /* main.swift */; };
+		9996C49A1E95C9FF00449E1A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996C4981E95C9FF00449E1A /* main.swift */; };
+		9996C49B1E95C9FF00449E1A /* ScoreManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996C4991E95C9FF00449E1A /* ScoreManage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		9996C48E1E95C9ED00449E1A /* SimpleScoreManageSystem2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimpleScoreManageSystem2; sourceTree = BUILT_PRODUCTS_DIR; };
-		9996C4911E95C9ED00449E1A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9996C4981E95C9FF00449E1A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9996C4991E95C9FF00449E1A /* ScoreManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreManage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		9996C4901E95C9ED00449E1A /* SimpleScoreManageSystem2 */ = {
 			isa = PBXGroup;
 			children = (
-				9996C4911E95C9ED00449E1A /* main.swift */,
+				9996C4981E95C9FF00449E1A /* main.swift */,
+				9996C4991E95C9FF00449E1A /* ScoreManage.swift */,
 			);
 			path = SimpleScoreManageSystem2;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					9996C48D1E95C9ED00449E1A = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9996C4921E95C9ED00449E1A /* main.swift in Sources */,
+				9996C49A1E95C9FF00449E1A /* main.swift in Sources */,
+				9996C49B1E95C9FF00449E1A /* ScoreManage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +223,10 @@
 		9996C4961E95C9ED00449E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -226,6 +234,8 @@
 		9996C4971E95C9ED00449E1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
